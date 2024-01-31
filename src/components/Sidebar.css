@@ -1,0 +1,63 @@
+button {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  cursor: pointer;
+  color: teal;
+}
+
+button:hover {
+  color: rgb(2, 171, 143);
+}
+
+.app-sidebar {
+  width: 35%;
+  height: 100vh;
+  border-right: 1px solid #ddd;
+}
+
+.app-sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+.app-sidebar-header h1 {
+  margin: 0;
+}
+
+.app-sidebar-notes {
+  height: calc(100vh - 78px);
+  overflow-y: scroll;
+}
+
+.app-sidebar-note {
+  padding: 25px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.sidebar-note-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app-sidebar-note p {
+  margin: 10px 0;
+}
+
+.app-sidebar-note small {
+  color: #999;
+}
+
+.app-sidebar-note:hover {
+  background: #dcd9d9;
+}
+
+.app-sidebar-note.active,
+.app-sidebar-note.active small {
+  background: rgb(239, 152, 132);
+  color: white;
+}
